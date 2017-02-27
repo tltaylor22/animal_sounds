@@ -6,12 +6,12 @@ require_relative 'fox.rb'
 class TestAnimalSoundsFunctions < Minitest::Test
 
 	def test_cat_name
-		animal = Cat.new('fluffy')
+		animal = Cat.new('fluffy','meow')
 		assert_equal('fluffy',animal.name)
 	end
 
 	def test_cat_sound
-		animal = Cat.new('fluffy')
+		animal = Cat.new('fluffy', 'meow')
 		assert_equal('meow',animal.sound)
 	end
 
@@ -36,7 +36,7 @@ class TestAnimalSoundsFunctions < Minitest::Test
 	end
 
 	def test_what_the_cat_says
-		animal=Cat.new('fluffy')
+		animal=Cat.new('fluffy','meow')
 		assert_equal('fluffy says meow', animal.get_sound)
 	end
 	

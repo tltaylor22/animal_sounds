@@ -1,12 +1,12 @@
 class Cat
 	attr_reader :name, :sound
-	def initialize(name)
+	def initialize(name, sound)
 		@name = name
-		@sound = 'meow'
+		@sound = sound
 	end
 
 	def get_sound
-		# @name +' says meow'
+		# @name +' says meow' or
 		@name + ' says ' + @sound
 
 	end
